@@ -1,0 +1,18 @@
+
+
+# Shaon Islam
+# CS 2750 PA 1
+# 09/16/2017
+
+
+BEGIN {print "<< Start of file >>"}
+{
+if(NR > 2 && NR < 6){
+	printf  NR;
+	printf ": ";
+	for (i = NF; i >= 1; i--)
+		printf  " %s", $i;
+printf "\n";
+N += NF;}
+}
+END {printf "<< End of File: wordCount = %d >> \n", N }
